@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - "5.1.4"
+  - "2.3.3"
 env:
   - DB=sqlite3
 script:
