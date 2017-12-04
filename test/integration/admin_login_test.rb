@@ -4,5 +4,4 @@ class AdminLoginTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
 
- 
 end
