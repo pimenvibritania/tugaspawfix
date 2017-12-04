@@ -1,5 +1,5 @@
 # PROJECT PENGEMBANGAN APLIKASI WEB
-<img src= "app/assets/images/logo.png"/>
+<p width="100px" height="100px" ><img src= "app/assets/images/logo.png"/></p>
 
 Things you may want to cover:
 
