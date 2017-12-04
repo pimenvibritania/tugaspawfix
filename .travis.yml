@@ -1,9 +1,11 @@
+
 language: ruby
 rvm:
   - "2.3.3"
 env:
   - DB=sqlite3
 script:
+  - "bundle exec rake neo4j:install['community-2.2.0-M02'] neo4j:start default --trace"
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rake
