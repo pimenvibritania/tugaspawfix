@@ -8,10 +8,12 @@
 sqlite: &sqlite
   adapter: sqlite3
   database: db/<%= Rails.env %>.sqlite3
-  
+
 defaults: &default
   adapter: sqlite3
-  encoding: utf8
+  pool: 5
+  host: localhost
+  timeout: 5000
 
 development:
   <<: *default
