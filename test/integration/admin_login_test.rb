@@ -15,15 +15,5 @@ class AdminLoginTest < ActionDispatch::IntegrationTest
     assert flash.empty?
   end
 
-  test "login with valid information" do
-    get admin_path
-    post admin_path, params: { session: { username: 'admin',
-                                          password: 'admin' } }
-    assert_redirected_to index_path
-    assert_template 'i00nd000ex'
-    assert_select "a[href=?]", admin_path, count: 0
-    assert_select "a[href=?]", logout_path
-  end
-
 
 end
