@@ -1,4 +1,4 @@
-# PROJECT PENGEMBANGAN APLIKASI WEB
+# <p align="center"> PROJECT PENGEMBANGAN APLIKASI WEB</p>
 <p align="center" ><img width="400" height="400" src= "app/assets/images/logo.png"/></p>
 
 <h1 align="center">SUPPLIER WAREHOUSE</h1>
