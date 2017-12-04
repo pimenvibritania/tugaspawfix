@@ -51,3 +51,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+# Gemfile
+# for CRuby, Rubinius, including Windows and RubyInstaller
+gem "sqlite3", :platform => [:ruby, :mswin, :mingw]
+
+# for JRuby
+gem "jdbc-sqlite3", :platform => :jruby
