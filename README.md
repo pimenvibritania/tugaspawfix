@@ -1,7 +1,5 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# PROJECT PENGEMBANGAN APLIKASI WEB
+<img src= "app/assets/images/logo.png"/>
 
 Things you may want to cover:
 
