@@ -58,3 +58,16 @@ body {
 
   float: right;
 }
+
+.trans
+{
+
+  background: rgba(0,0,0,0.5);
+}
+
+.head
+{
+
+  width: 140px;
+  height: 140px;
+}
