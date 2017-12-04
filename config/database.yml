@@ -8,7 +8,7 @@
 sqlite: &sqlite
   adapter: sqlite3
   database: db/<%= Rails.env %>.sqlite3
-  
+
 default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -28,3 +28,8 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+  test:
+  adapter: sqlite3
+  database: ":memory:"
+  timeout: 500
