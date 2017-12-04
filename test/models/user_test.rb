@@ -1,10 +1,7 @@
 require 'test_helper'
 
-class AdminLoginTest < ActionDispatch::IntegrationTest
+class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
-
- 
-
 end
