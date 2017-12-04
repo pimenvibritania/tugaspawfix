@@ -1,22 +1,19 @@
 # PROJECT PENGEMBANGAN APLIKASI WEB
-<p align="center" ><img width="100" height="100" src= "app/assets/images/logo.png"/></p>
+<p align="center" ><img width="400" height="400" src= "app/assets/images/logo.png"/></p>
 
-Things you may want to cover:
+<h1 align="center">SUPPLIER WAREHOUSE</h1>
 
-* Ruby version
+## Tools yang digunakan 
 
-* System dependencies
+* Ruby on Rails 5.1.4 
 
-* Configuration
+* Bootstrap v.4.0x
 
-* Database creation
+* SQL Lite 3 Database
 
-* Database initialization
+* Port : 2613
 
-* How to run the test suite
+## Anggota Kelompok
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* PIRMAN ABDUROHMAN 1157050127
+* HAFIZH JISMY T
