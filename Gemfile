@@ -59,3 +59,7 @@ gem "sqlite3", :platform => [:ruby, :mswin, :mingw]
 # for JRuby
 gem "jdbc-sqlite3", :platform => :jruby
 gem 'pg'
+
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2'
