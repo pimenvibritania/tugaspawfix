@@ -9,8 +9,9 @@ class AdminController < ApplicationController
   		redirect_to index_path
 
   	else
-  		flash.now[:danger] = "Username atau Password salah!"
+  	  flash.now[:danger] = "Username atau Password salah!"
   		render 'login'
+      #redirect_to admin_path
   	end
   end
 
