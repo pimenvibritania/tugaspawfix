@@ -65,6 +65,29 @@ body {
   background: rgba(0,0,0,0.5);
 }
 
+.trans2
+{
+
+  background: rgba(13, 206, 216, 0.7);
+  margin-right: 200px;
+  margin-left: 200px;
+  border:1px solid #0dced8;
+  border-radius: 5%;
+  box-shadow: 5px 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.backg
+{
+  margin-right: 200px;
+  margin-left: 200px;
+  
+}
+
 .head
 {
 

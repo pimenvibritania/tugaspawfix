@@ -1,14 +1,12 @@
-<div class="contaner">
-  <p id="notice"><%= notice %></p>
-  <div class="row">
-    <div class="col-12">
-      <div class="card card-inverse" style="background-color: #333; border-color: #333">
-        <div class="card-block">
-          <div class="row">
-            <div class="col-md-8 col-sm-8">
-              <h2 class="card-title"> <%= @user.username %></h2>
               
-               
+          <div class="container">
+            <p class="alert alert-primary" role="alert">
+              <%= notice %>
+            </p>
+            <h1 class="cent">
+              Show User              
+            </h1>
+              <div class="trans2">
               <p>
                 <strong>Nama:</strong>
                 <%= @user.nama %>
@@ -23,16 +21,16 @@
                 <strong>Alamat:</strong>
                 <%= @user.alamat %>
               </p>
-            </div>
-            <div class="col-md-4 col-sm-4 text-center">
-              <%= image_tag("logo.png", :class => "btn-md ") %>
-              
-            </div>
-            <%= link_to 'Edit', edit_user_path(@user) %> |
-            <%= link_to 'Back', users_path %>
+              <p>
+                <strong>Username:</strong>
+                <%= @user.username %>
+              </p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          <br>
+
+          <div class="backg">
+           <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary' %> |
+            <%= link_to 'Back', users_path, class: 'btn btn-primary' %>
+          </div>
+          </div>
+        <br><br>
