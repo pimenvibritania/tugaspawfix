@@ -1,10 +1,15 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  layout 'user_login'
 
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+  end
+
+  def indexuser
+    render layout: 'user_login'
   end
 
   # GET /users/1
@@ -61,6 +66,28 @@ class UsersController < ApplicationController
     end
   end
 
+  def login
+  end
+
+  def signin
+    user = User.find_by(username: params[:username])
+    if user && user.authenticate(params[:password])
+      session[:user_id] = user.id
+      redirect_to member_index_path
+
+    else
+      flash.now[:danger] = "Username atau Password salah!"
+      render 'login'
+      #redirect_to admin_path
+    end
+  end
+
+  def logout
+
+    session[:user_id] = nil
+    redirect_to member_path
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
@@ -69,6 +96,8 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:username, :password_digest, :nama, :email, :alamat)
+      params.require(:user).permit(:username, :password, :nama, :email, :alamat)
     end
+
+
 end

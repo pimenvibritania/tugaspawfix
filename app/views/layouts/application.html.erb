@@ -45,26 +45,26 @@
             <li class="nav-item active">
               <%= link_to 'Home', index_path, class: 'nav-link' %>
             </li>
-            <% if !logged_in? %>
 
-            	<li class="nav-item">
-            	<%= link_to 'Login', admin_path, class: 'nav-link' %>
-            	</li>
 
+             <% if !admin_logged_in? %>
+              <li class="nav-item">
+              <%= link_to 'Login', member_path, class: 'nav-link' %>
+              </li>
             <% else %>
 
             <li class="nav-item">
-            	<div class="dropdown">
-				  <a href="#" class="nav-link dropdown-toggle mx-1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				 Transaksi
-				  </a>
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    <a class="dropdown-item" href="#">Penjualan</a>
-				    <a class="dropdown-item" href="#">Pembelian</a>
-				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">All Reports</a>
-				  </div>
-				</div>
+              <div class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle mx-1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Transaksi
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Penjualan</a>
+            <a class="dropdown-item" href="#">Pembelian</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">All Reports</a>
+          </div>
+        </div>
             </li>
 
           </ul>
@@ -72,38 +72,42 @@
            <ul class="navbar-nav ml-auto mg">
            
             <li class="nav-item">
-            	<div class="dropdown">
-				  <a href="#" class="nav-link dropdown-toggle mx" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				 Master
-				  </a>
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    <a class="dropdown-item" href="#">Kategori</a>
-				    <a class="dropdown-item" href="#">Supplier</a>
-				    <a class="dropdown-item" href="#">Barang</a>
-				    <div class="dropdown-divider"></div>
-				    <%= link_to 'User', users_path, class: 'dropdown-item' %>
-				  </div>
-				</div>
+              <div class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle mx" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Master
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Kategori</a>
+            <a class="dropdown-item" href="#">Supplier</a>
+            <a class="dropdown-item" href="#">Barang</a>
+            <div class="dropdown-divider"></div>
+            <%= link_to 'User', users_path, class: 'dropdown-item' %>
+          </div>
+        </div>
             </li>
 
              <li class="nav-item">
-            	<div class="dropdown">
-				  <a href="#" class="nav-link dropdown-toggle mx"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				 Settings
-				  </a>
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    <a class="dropdown-item" href="#">Profile</a>
-				    <a class="dropdown-item" href="#">About</a>
-				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">General</a>
-				    <a class="dropdown-item" href="#">Level & Privelege</a>
-				    <div class="dropdown-divider"></div>
-				    <%= link_to 'Logout', logout_path, method: :delete , class: 'dropdown-item' %>
-
-				  </div>
-				</div>
+              <div class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle mx"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Settings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">About</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">General</a>
+            <a class="dropdown-item" href="#">Level & Privelege</a>
+            <div class="dropdown-divider"></div>
+          
+                        <%= link_to 'Logout', logout_path, method: :delete , class: 'dropdown-item' %>
+          
+          </div>
+        </div>
             </li>
             <% end %>
+
+
+            
           </ul>
           
         </div>
