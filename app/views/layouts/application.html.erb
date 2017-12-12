@@ -47,66 +47,57 @@
             </li>
 
 
-             <% if !admin_logged_in? %>
-              <li class="nav-item">
+            <% if !admin_logged_in? %>
+            <li class="nav-item">
               <%= link_to 'Login', member_path, class: 'nav-link' %>
-              </li>
+            </li>
             <% else %>
 
             <li class="nav-item">
               <div class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle mx-1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Transaksi
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#"><%= link_to "Penjualan", sales_path, class: 'dropdown-item' %></a>
-             <a class="dropdown-item" href="#">Pembelian</a>
-    
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">All Reports</a>
-          </div>
-        </div>
+                <a href="#" class="nav-link dropdown-toggle mx-1" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transaksi</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><%= link_to "Penjualan", sales_path, class: 'dropdown-item' %></a>
+                  <a class="dropdown-item" href="#">Pembelian</a>
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">All Reports</a>
+                </div>
+              </div>
             </li>
-
           </ul>
 
-           <ul class="navbar-nav ml-auto mg">
+          <ul class="navbar-nav ml-auto mg">
            
             <li class="nav-item">
               <div class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle mx" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Master   </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Kategori</a>
-            <a class="dropdown-item" href="#"> Supplier</a>
-            <a class="dropdown-item" href="#"><%= link_to "Barang", products_path , class: 'dropdown-item' %></a>
-            <div class="dropdown-divider"></div>
-            <%= link_to 'User', users_path, class: 'dropdown-item' %>
-          </div>
-        </div>
+                <a href="#" class="nav-link dropdown-toggle mx" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Master   </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Kategori</a>
+                  <a class="dropdown-item" href="#"> Supplier</a>
+                  <a class="dropdown-item" href="#"><%= link_to "Barang", products_path , class: 'dropdown-item' %></a>
+                  <div class="dropdown-divider"></div>
+                  <%= link_to 'User', users_path, class: 'dropdown-item' %>
+                </div>
+              </div>
             </li>
 
-             <li class="nav-item">
+            <li class="nav-item">
               <div class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle mx"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  Settings          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Profile</a>
-            <a class="dropdown-item" href="#">About</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">General</a>
-            <a class="dropdown-item" href="#">Level & Privelege</a>
-            <div class="dropdown-divider"></div>
+                <a href="#" class="nav-link dropdown-toggle mx"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  Settings          </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">About</a>
+                    <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">General</a>
+                      <a class="dropdown-item" href="#">Level & Privelege</a>
+                      <div class="dropdown-divider"></div>        
+                      <%= link_to 'Logout', logout_path, method: :delete , class: 'dropdown-item' %>
           
-                        <%= link_to 'Logout', logout_path, method: :delete , class: 'dropdown-item' %>
-          
-          </div>
-        </div>
+                  </div>
+              </div>
             </li>
-            <% end %>
-
-
-            
           </ul>
-          
+           <% end %>
         </div>
       </nav>
     </header>
