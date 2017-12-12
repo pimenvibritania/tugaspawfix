@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<h1 align="center">Users</h1>
+<div class="container">
+<table>
+  
+
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Kode</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Harga</th>
+     
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  
+
+  <tbody>
+   <% @products.each do |product| %>
+      <tr>
+        <td><%= product.code %></td>
+        <td><%= product.name %></td>
+        <td><%= product.proce %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+<%= link_to 'New Product', new_product_path , class: 'btn btn-primary'%>
+
+</div>
+<br>
+

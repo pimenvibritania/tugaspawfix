@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <%= link_to 'Home', index_path, class: 'nav-link' %>
+              <%= link_to 'Home', member_index_path, class: 'nav-link' %>
             </li>
 
 
@@ -61,7 +61,7 @@
 				 Transaksi
 				  </a>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    <a class="dropdown-item" href="#">Penjualan</a>
+				    <a class="dropdown-item" href="#"><%= link_to "Penjualan", sales_path, class: 'dropdown-item' %></a>
 				    <a class="dropdown-item" href="#">Pembelian</a>
 				   
 				</div>
@@ -78,8 +78,8 @@
 				  </a>
 				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				    <a class="dropdown-item" href="#">Kategori</a>
-				    <a class="dropdown-item" href="#">Supplier</a>
-				    <a class="dropdown-item" href="#">Barang</a>
+				    <a class="dropdown-item" href="#"> Supplier</a>
+				    <a class="dropdown-item" href="#"><%= link_to "Barang", products_path , class: 'dropdown-item' %></a>
 				   
 				</div>
             </li>

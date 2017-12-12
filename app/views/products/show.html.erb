@@ -1,0 +1,29 @@
+<div class="container">
+<p class="alert alert-primary" role="alert" ><%= notice %></p>
+
+<h1 class="cent">Show User</h1>
+<div class="trans2">
+<p>
+  <strong>Code:</strong>
+  <%= @product.code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Proce:</strong>
+  <%= @product.proce %>
+</p>
+</div>
+<br>
+
+<div class="backg">
+<%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary' %> |
+<%= link_to 'Back', products_path, class: 'btn btn-primary' %>
+ </div>
+ </div>
+
+
