@@ -21,7 +21,7 @@
           <div class="carousel-item">
             <%= image_tag("02.jpg", :class => "second-slide") %>
             <div class="container">
-              <div class="carousel-caption trans cent">
+              <div class="carousel-caption trans cent"> 
                 <h1>SUPPLIER WAREHOUSE</h1>
                 <p><b>"Belanja Puas, Harga Pas"</b> (Alfamart)</p>
               </div>
@@ -59,11 +59,11 @@
           <div class="col-lg-4">
             <%= image_tag("logo.png", :class => "rounded-circle head") %>
             <h2>BARANG</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p>Lihat macam macam yang tersedia disini.</p>
              <% if !admin_logged_in? %>
              <%= link_to 'View details', admin_path, class: 'btn btn-secondary' %>
              <% else %>
-             <%= link_to 'View details', users_path, class: 'btn btn-secondary' %>
+             <%= link_to 'View details', product_barang_path, class: 'btn btn-secondary' %>
               <% end %>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
